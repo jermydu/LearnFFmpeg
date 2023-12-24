@@ -1,0 +1,11 @@
+build-HelloFFmepg-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+build-demo01_memorymodel-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+build-demo02_demux-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+*.user
+*.recipe
+*.ilk
+*.log
+*.obj
+*.idb
+*.pdb
+*.tlog
