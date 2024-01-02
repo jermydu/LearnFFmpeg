@@ -182,6 +182,10 @@ int main(int argc, char* argv[])
     const int printPktMaxCount = 20;
     AVPacket* pAVPacket = av_packet_alloc();
 
+    //av_find_best_stream 也可获取流索引号
+    nVideoIndex = av_find_best_stream(pAvFormatContext,AVMEDIA_TYPE_VIDEO,-1,-1,NULL,0);
+    nAudioIndex = av_find_best_stream(pAvFormatContext,AVMEDIA_TYPE_AUDIO,-1,-1,NULL,0);
+
     cout << "=================av_read_frame" << endl;
     while(1)
     {

@@ -103,7 +103,7 @@ void av_packet_test5()
 //    av_init_packet(pkt);  //av_packet_move_ref
 
     av_packet_ref(pkt, pkt2);
-    av_packet_ref(pkt, pkt2);     // 多次ref如果没有对应多次unref将会内存泄漏
+    av_packet_ref(pkt, pkt2);     // 多次ref将会内存泄漏
     if(pkt->buf)        // 打印referenc-counted，必须保证传入的是有效指针
     {    printf("%s(%d) ref_count(pkt) = %d\n", __FUNCTION__, __LINE__,
                av_buffer_get_ref_count(pkt->buf));
@@ -153,9 +153,9 @@ void av_packet_test6()
 void av_packet_test()
 {
     av_packet_test1();
-    av_packet_test2();
-    av_packet_test3();
-    av_packet_test4();
-    av_packet_test5();
-    av_packet_test6();
+    //av_packet_test2();
+    //av_packet_test3();
+    //av_packet_test4();
+    //av_packet_test5();
+    //av_packet_test6();
 }
