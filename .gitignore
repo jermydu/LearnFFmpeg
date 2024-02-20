@@ -11,3 +11,5 @@ build-demo02_demux-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
 *.tlog
 build-demo03_aac-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
 testvideo/testvideo1_aac.aac
+build-demo04_nalu-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/
+*.h264
