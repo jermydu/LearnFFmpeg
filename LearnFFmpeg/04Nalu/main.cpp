@@ -49,7 +49,6 @@ int main(int argc,char* argv[])
         av_strerror(ret,buf,sizeof(buf) - 1);
         std::string strError = util::Format("open {0} failed {1}",inFileName,buf);
         cout << strError << endl;
-        CloseAvFormatInput(pAvFormatContext);
         return -1;
     }
 
